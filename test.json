@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/YOUR_USERNAME/swagger-xss/main/login.yaml",
+  "urls": [
+    {
+      "url": "https://raw.githubusercontent.com/YOUR_USERNAME/swagger-xss/main/login.yaml",
+      "name": "Fake Login"
+    }
+  ]
+}
